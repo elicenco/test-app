@@ -1,11 +1,11 @@
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import DetaliiProiect from "./components/DetaliiProiect";
 import LineTo from "react-lineto";
-import { ToastContainer } from 'react-toastify';
 import { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import { main } from "./functions/doStuff";
 import { generare, setareObstacol } from "./functions/helperFunctions";
-import { main } from './functions/doStuff';
-import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -32,7 +32,7 @@ const App = () => {
           <li>Zamfir Irina</li> 
         </div>
         <figure class="hover-rotate">
-          <img src="https://i.redd.it/jdmuzf6loqya1.jpg" height="200" width="240"/></figure>
+          <img src="https://i.redd.it/jdmuzf6loqya1.jpg" height="200" width="240" alt="liceu"/></figure>
       <div className="App" class="center">
         <div className='containerProiect'>
           <DetaliiProiect />
